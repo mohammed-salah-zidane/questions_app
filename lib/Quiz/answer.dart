@@ -10,9 +10,11 @@ class Answer extends StatelessWidget {
     return Container(
       width: double.infinity,
       margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
-      child: RaisedButton(
-        textColor: Colors.white,
-        color: Colors.purple,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          primary: Colors.purple,
+          onPrimary: Colors.white,
+        ),
         child: Text(answerText),
         onPressed: () {
           onPress();
